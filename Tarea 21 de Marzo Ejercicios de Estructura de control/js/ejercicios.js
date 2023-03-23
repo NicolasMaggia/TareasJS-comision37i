@@ -1,4 +1,4 @@
-//1.
+//10.
 /*let base, altura, superficie;
 let cantTriangMayorDoce = 0;
 
