@@ -236,5 +236,82 @@ for(let i = 1; i <= 10; i++){
 tabla de multiplicar del mismo (los primeros 12 términos)
 Ejemplo: Si ingreso 3 deberá aparecer en pantalla los valores 3, 6, 9, hasta el 36.*/
 
+/*  let num, i, producto
+i = 1;
+num = parseInt(prompt('Ingrese un numero para ver su tabla de multiplicacion'));
 
+
+for(let i = 1; i <= 12; i++){
+    producto = i * num; 
+    document.write(`${i} x ${num} = ${producto} <br>`);
+
+    } */
+
+/* 14.  Realizar un programa que lea los lados de 4 triángulos, e informar:
+a) De cada uno de ellos, qué tipo de triángulo es: equilátero (tres lados iguales),
+isósceles (dos lados iguales), o escaleno (ningún lado igual)
+b) Cantidad de triángulos de cada tipo.
+c) Tipo de triángulo del que hay menor cantidad.*/
+
+
+let lado1, lado2, lado3, i, min, max, txtMax, txtMin
+
+let equilatero = 0;
+let isosceles = 0;
+let escaleno = 0;
+
+for(let i = 1; i <=3; i++){
+lado1 = parseInt(prompt('Ingrese el valor del primer lado del triangulo'));
+lado2 = parseInt(prompt('Ingrese el valor del segundo lado del triangulo'));
+lado3 = parseInt(prompt('Ingrese el valor del tercer lado del triangulo'));
+
+if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3){
+    document.write(`El triangulo numero: ${i} es Equilatero. <br>`);
+    equilatero = equilatero + 1
+    }else if(lado1 != lado2 && lado1 != lado3 && lado2 != lado3){
+    document.write(`El triangulo numero: ${i}  es Escaleno. <br>`);
+    escaleno = escaleno + 1;
+} else{
+    document.write(`El triangulo numero: ${i}  es Isosceles. <br>`)
+    isosceles = isosceles + 1;
+}
+}
+
+document.write('<br> Triangulos Equilateros hay: ${equilatero} ');
+document.write('<br> Triangulos Escaleno hay: ${escaleno} ');
+document.write('<br> Triangulos isosceles hay: ${isosceles} ');
+
+min = equilatero; 
+txtMin = equilatero;
+if (isosceles < min){
+    min = isosceles;
+} else if(escaleno < min){
+    min = escaleno; 
+}
+if(escaleno < min){
+    txtMin = escaleno;
+}
+
+max = equilatero;
+txtMax = equilatero;
+if (isosceles > max){
+    max = equilatero; 
+    txtMax = isosceles;
     
+} else if(escaleno > max){
+    max = escaleno; 
+}
+
+document.write('<br> El tipo de triangulo del que hay menor cantidad es: ${+txtMin} ');
+document.write('<br> El tipo de triangulo del que hay mayor cantidad es: ${+txtMax} ');
+
+
+
+
+/* for(let i = 1; i <=3; i++){
+    document.write(`El primer triangulo es: ${triangulo1} <br> `)
+   /*  document.write(`El segundo triangulo es: ${triangulo2} <br> `)
+    document.write(`El tercer triangulo es: ${triangulo3} <br> `) */
+
+
+/* (lado1 == lado2 && lado1 != lado3 && lado2 == lado3) */
