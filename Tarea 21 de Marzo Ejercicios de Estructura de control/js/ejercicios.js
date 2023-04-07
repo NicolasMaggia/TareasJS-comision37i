@@ -345,9 +345,9 @@ b) La cantidad de valores positivos ingresados.
 c) La cantidad de múltiplos de 15.
 d) El valor acumulado de los números ingresados que son pares.*/
 
-let num, i, negativos = 0, positivos = 0, cantMultiplosQuince = 0, cantPares = 0
+/*let num, i, negativos = 0, positivos = 0, cantMultiplosQuince = 0, cantPares = 0
 
-for(let i = 1; i <= 4; i++){
+for(let i = 1; i <= 10; i++){
     num = parseFloat(prompt('Ingrese un valores.'));
     if(num > 0){
     positivos = positivos + 1;
@@ -358,7 +358,7 @@ for(let i = 1; i <= 4; i++){
        cantPares = cantPares + num ; 
     } 
 
-    if(num % 15 == 0){
+    if(num % 15 ==  && num > 0){
         cantMultiplosQuince = cantMultiplosQuince + 1;
     } 
 
@@ -367,5 +367,5 @@ for(let i = 1; i <= 4; i++){
 document.write(`La cantidad de valores positivos ingresados es: ${positivos} <br> `);
 document.write(`La cantidad de valores negativos ingresados es: ${negativos} <br> `);
 document.write(`La suma de valores pares ingresados es: ${cantPares} <br> `); 
-document.write(`La cantidad de multiplos de 15 son: ${cantMultiplosQuince} <br> `); 
+document.write(`La cantidad de multiplos de 15 son: ${cantMultiplosQuince} <br> `); */
 
