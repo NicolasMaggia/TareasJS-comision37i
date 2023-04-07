@@ -309,9 +309,11 @@ el plano. Informar cuántos puntos se han ingresado en el primer, segundo, terce
 cuarto cuadrante. Al comenzar el programa se pide que se ingrese la cantidad de
 puntos a procesar.*/
 
-let x, y, i, primer = 0, segundo = 0, tercer = 0, cuarto = 0
+/*let x, y, i, cantPuntos, primer = 0, segundo = 0, tercer = 0, cuarto = 0
 
-for(let i = 1; i <=4; i++){
+cantPuntos = parseInt(prompt('Informar la cantidad de coordenadas que desea ingresar.'));
+
+for(let i = 1; i <= cantPuntos; i++){        
 x = parseInt(prompt('Ingrese la coordenada (x).'));
 y = parseInt(prompt('Ingrese la coordenada (x).'));
 
@@ -330,10 +332,40 @@ if(x >= 0 && y >= 0){
     }
 }
 
-
 document.write(`<br> Se ingresaron: ${primer} puntos en el primer cuadrante.`);
 document.write(`<br> Se ingresaron: ${segundo} puntos en el segundo cuadrante.`);
 document.write(`<br> Se ingresaron: ${tercer} puntos en el tercer cuadrante.`);
-document.write(`<br> Se ingresaron: ${cuarto} puntos en el cuarto cuadrante.`);
+document.write(`<br> Se ingresaron: ${cuarto} puntos en el cuarto cuadrante.`);*/
 
+
+
+ /*16. Se realiza la carga de 10 valores enteros por teclado. Se desea conocer:
+a) La cantidad de valores negativos ingresados.
+b) La cantidad de valores positivos ingresados.
+c) La cantidad de múltiplos de 15.
+d) El valor acumulado de los números ingresados que son pares.*/
+
+let num, i, negativos = 0, positivos = 0, cantMultiplosQuince = 0, cantPares = 0
+
+for(let i = 1; i <= 4; i++){
+    num = parseFloat(prompt('Ingrese un valores.'));
+    if(num > 0){
+    positivos = positivos + 1;
+    }else{
+   negativos = negativos + 1;
+    }
+    if(num % 2 == 0){
+       cantPares = cantPares + num ; 
+    } 
+
+    if(num % 15 == 0){
+        cantMultiplosQuince = cantMultiplosQuince + 1;
+    } 
+
+}
+
+document.write(`La cantidad de valores positivos ingresados es: ${positivos} <br> `);
+document.write(`La cantidad de valores negativos ingresados es: ${negativos} <br> `);
+document.write(`La suma de valores pares ingresados es: ${cantPares} <br> `); 
+document.write(`La cantidad de multiplos de 15 son: ${cantMultiplosQuince} <br> `); 
 
