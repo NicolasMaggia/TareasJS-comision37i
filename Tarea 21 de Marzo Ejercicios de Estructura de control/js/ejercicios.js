@@ -254,64 +254,86 @@ b) Cantidad de triángulos de cada tipo.
 c) Tipo de triángulo del que hay menor cantidad.*/
 
 
-let lado1, lado2, lado3, i, min, max, txtMax, txtMin
+/*let lado1, lado2, lado3, i, equilatero = 0, isosceles = 0, escaleno = 0, cantMayor, cantMenor
 
-let equilatero = 0;
-let isosceles = 0;
-let escaleno = 0;
 
 for(let i = 1; i <=3; i++){
 lado1 = parseInt(prompt('Ingrese el valor del primer lado del triangulo'));
 lado2 = parseInt(prompt('Ingrese el valor del segundo lado del triangulo'));
 lado3 = parseInt(prompt('Ingrese el valor del tercer lado del triangulo'));
 
-if (lado1 == lado2 && lado1 == lado3 && lado2 == lado3){
-    document.write(`El triangulo numero: ${i} es Equilatero. <br>`);
-    equilatero = equilatero + 1
+if(lado1 == lado2 && lado1 == lado3 && lado2 == lado3){
+        document.write(`El triangulo numero: ${i} es Equilatero. <br>`);
+         equilatero = equilatero + 1;
     }else if(lado1 != lado2 && lado1 != lado3 && lado2 != lado3){
-    document.write(`El triangulo numero: ${i}  es Escaleno. <br>`);
-    escaleno = escaleno + 1;
-} else{
-    document.write(`El triangulo numero: ${i}  es Isosceles. <br>`)
-    isosceles = isosceles + 1;
+        document.write(`El triangulo numero: ${i}  es Escaleno. <br>`);
+        escaleno = escaleno + 1;
+    }else{
+        document.write(`El triangulo numero: ${i}  es Isosceles. <br>`);
+        isosceles = isosceles + 1;
 }
 }
 
-document.write('<br> Triangulos Equilateros hay: ${equilatero} ');
-document.write('<br> Triangulos Escaleno hay: ${escaleno} ');
-document.write('<br> Triangulos isosceles hay: ${isosceles} ');
+document.write(`<br> Triangulos Equilateros hay: ${equilatero} `);
+document.write(`<br> Triangulos Escaleno hay: ${escaleno} `);
+document.write(`<br> Triangulos isosceles hay: ${isosceles} `);
+
 
 min = equilatero; 
-txtMin = equilatero;
+cantMenor = equilatero;
 if (isosceles < min){
     min = isosceles;
 } else if(escaleno < min){
     min = escaleno; 
 }
 if(escaleno < min){
-    txtMin = escaleno;
+    cantMenor = escaleno;
 }
 
 max = equilatero;
-txtMax = equilatero;
+cantMayor = equilatero;
 if (isosceles > max){
     max = equilatero; 
-    txtMax = isosceles;
+    cantMayor = isosceles;
     
 } else if(escaleno > max){
     max = escaleno; 
 }
 
-document.write('<br> El tipo de triangulo del que hay menor cantidad es: ${+txtMin} ');
-document.write('<br> El tipo de triangulo del que hay mayor cantidad es: ${+txtMax} ');
+document.write(`<br> El tipo de triangulo del que hay menor cantidad es: ${cantMenor} `);
+document.write(`<br> El tipo de triangulo del que hay mayor cantidad es: ${cantMayor} `);*/
 
 
+/*  15. Escribir un programa que pida ingresar coordenadas (x,y) que representan puntos en
+el plano. Informar cuántos puntos se han ingresado en el primer, segundo, tercer y
+cuarto cuadrante. Al comenzar el programa se pide que se ingrese la cantidad de
+puntos a procesar.*/
+
+let x, y, i, primer = 0, segundo = 0, tercer = 0, cuarto = 0
+
+for(let i = 1; i <=4; i++){
+x = parseInt(prompt('Ingrese la coordenada (x).'));
+y = parseInt(prompt('Ingrese la coordenada (x).'));
+
+if(x >= 0 && y >= 0){
+        document.write(`La coordenada ${i}  pertenece al primer cuadrante. <br>`);
+        primer = primer + 1;
+    }else if(x < 0 && y > 0){
+        document.write(`La coordenada ${i}  pertenece al segundo cuadrante. <br>`);
+        segundo = segundo + 1;
+    }else if(x < 0 && y < 0){
+        document.write(`La coordenada ${i}  pertenece al tercer cuadrante. <br>`);
+        tercer = tercer + 1;
+    }else{
+        document.write(`La coordenada ${i}  pertenece al cuarto cuadrante. <br>`);
+        cuarto = cuarto + 1;
+    }
+}
 
 
-/* for(let i = 1; i <=3; i++){
-    document.write(`El primer triangulo es: ${triangulo1} <br> `)
-   /*  document.write(`El segundo triangulo es: ${triangulo2} <br> `)
-    document.write(`El tercer triangulo es: ${triangulo3} <br> `) */
+document.write(`<br> Se ingresaron: ${primer} puntos en el primer cuadrante.`);
+document.write(`<br> Se ingresaron: ${segundo} puntos en el segundo cuadrante.`);
+document.write(`<br> Se ingresaron: ${tercer} puntos en el tercer cuadrante.`);
+document.write(`<br> Se ingresaron: ${cuarto} puntos en el cuarto cuadrante.`);
 
 
-/* (lado1 == lado2 && lado1 != lado3 && lado2 == lado3) */
