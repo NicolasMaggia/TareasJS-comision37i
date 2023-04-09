@@ -381,7 +381,6 @@ promedio de edades mayor.*/
 
 let alumnosMañana, i, sumaMañana = 0, sumaTarde = 0, sumaNoche = 0, alumnosTarde, alumnosNoche, promedioMañana, promedioTarde, promedioNoche
 
-
 for(let i = 1; i <= 5; i++){
     alumnosMañana = parseInt(prompt('Ingrese la edad de los alumnos del turno mañana. '));
     sumaMañana = sumaMañana + alumnosMañana;
