@@ -369,3 +369,44 @@ document.write(`La cantidad de valores negativos ingresados es: ${negativos} <br
 document.write(`La suma de valores pares ingresados es: ${cantPares} <br> `); 
 document.write(`La cantidad de multiplos de 15 son: ${cantMultiplosQuince} <br> `); */
 
+/* 17.Se cuenta con la siguiente información:
+Las edades de 5 estudiantes del turno mañana.
+Las edades de 6 estudiantes del turno tarde.
+Las edades de 11 estudiantes del turno noche.
+Las edades de cada estudiante deben ingresarse por teclado.
+a) Obtener el promedio de las edades de cada turno (tres promedios).
+b) Imprimir dichos promedios (promedio de cada turno).
+c) Mostrar por pantalla un mensaje que indique cual de los tres turnos tiene un
+promedio de edades mayor.*/
+
+let alumnosMañana, i, sumaMañana = 0, sumaTarde = 0, sumaNoche = 0, alumnosTarde, alumnosNoche, promedioMañana, promedioTarde, promedioNoche
+
+
+for(let i = 1; i <= 5; i++){
+    alumnosMañana = parseInt(prompt('Ingrese la edad de los alumnos del turno mañana. '));
+    sumaMañana = sumaMañana + alumnosMañana;
+    promedioMañana = sumaMañana / 5;
+}
+for(let i = 1; i <= 6; i++){
+    alumnosTarde = parseInt(prompt('Ingrese la edad de los alumnos del turno tarde. '));
+    sumaTarde = sumaTarde + alumnosTarde;
+    promedioTarde = sumaTarde / 6;
+}
+for(let i = 1; i <= 11; i++){
+    alumnosNoche = parseInt(prompt('Ingrese la edad de los alumnos del turno noche. '));
+    sumaNoche = sumaNoche + alumnosNoche;
+    promedioNoche = sumaNoche / 11;
+}
+
+document.write(`El promedio de edad de los alumnos del turno (mañana) es de: ${promedioMañana}. <br>`);
+document.write(`El promedio de edad de los alumnos del turno (tarde) es de: ${promedioTarde}. <br>`);
+document.write(`El promedio de edad de los alumnos del turno (noche) es de: ${promedioNoche}. <br>`);
+
+if(promedioMañana > promedioTarde && promedioMañana > promedioNoche){
+    document.write(' El promedio de edades del turno mañana es mayor que el promedio de los turnos tarde y noche. <br>' );
+} else if(promedioTarde > promedioMañana && promedioTarde > promedioNoche){
+    document.write('El promedio de edades del turno tarde es mayor que el promedio de los turnos mañana y noche. <br>'); 
+} else { 
+    document.write('El promedio de edades del turno noche es mayor que el promedio de los turnos mañana y tarde. <br>'); 
+}
+
