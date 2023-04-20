@@ -87,8 +87,66 @@ Ejemplo:
 input: Hola mundo
 Output: oauo
  */
+/* let letra = prompt('Introduce una letra para contar luego en la frase') */
+/* let frase = (prompt('Ingrese una frase.'));
 
-/* let frase = (prompt('Escribe una frase.')); */
+for(let i=0; i < frase.length; i++){
+    switch(frase.length){
+        case a:
+            document.write('A');
+            break;
+        case e:
+            document.write('E');
+            break;
+        case i:
+            document.write('I');
+            break;
+        case o:
+            document.write(O);
+            break;
+        case u:
+            document.write('U');
+            break
+    }
+} */
+
+
+let frase = prompt(`Escriba una frase.`);
+let texto = frase.length
+
+
+for(let i = O; i <= texto; i++){
+    if(frase.charAt(i,0) === "a" || frase.charAt(i,0) === "e" || frase.charAt(i,0) === "à" || 
+        frase.charAt(i,0) === "E" || frase.charAt(i,0) === "A" || frase.charAt(i,0) === "è" ||
+        frase.charAt(i,0) === "i" || frase.charAt(i,0) === "I" || frase.charAt(i,0) === "ì" || 
+        frase.charAt(i,0) === "o" || frase.charAt(i,0) === "O" || frase.charAt(i,0) === "ò" || 
+        frase.charAt(i,0) === "u" || frase.charAt(i,0) === "ù" || frase.charAt(i,0) === "U")
+        document.write(frase.charAt(i,0));
+    }
+
+
+
+
+/* let valor = parseInt(prompt('Ingrese un valor comprendido entre 1 y 5'));
+switch(valor){
+    case 1:
+        document.write('uno');
+        break;
+    case 2:
+        document.write('dos');
+        break;
+    case 3:
+        document.write('tres');
+        break;
+    case 4:
+        document.write('cuatro');
+        break;
+    case 5:
+        document.write('cinco');
+        break;
+    default:
+        document.write('Debe ingresar un valor comprendido entre 1 y 5, no sea porfiado');
+} */
 
 
 /* 10.- Escribe un programa que pida un número y nos diga si es divisible por 2, 3, 5 o 7 (sólo hay que comprobar si lo es por uno de los cuatro)
@@ -118,7 +176,7 @@ input: 210
 Output: El 20 es divisible por 2 y por 5.
 Output: El 210 es divisible por 2, por 3, por 5 y por 7. */
 
-
+/* 
 let num = parseInt(prompt('Ingrese un numero. '));
 
 if(num % 2 == 0 && num > 0 ){
@@ -133,3 +191,4 @@ if(num % 3 == 0 && num > 0){
 if(num % 7 == 0 && num > 0 ){
     document.write(`${num} es divisible por 7. <br>`);
 } 
+ */

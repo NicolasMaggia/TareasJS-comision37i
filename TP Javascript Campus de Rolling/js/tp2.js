@@ -26,7 +26,7 @@ Output: Número erróneo
 Output: Introduce un número válido
  */
 
-let nota = parseInt(prompt('Ingrese una nota. '));
+/* let nota = parseInt(prompt('Ingrese una nota. '));
 
 if(nota <= 2 ){
     document.write(`Muy deficiente. `);
@@ -42,4 +42,9 @@ if(nota <= 2 ){
     document.write('Sobresaliente.');
 }else{
     document.write('El numero ingresado no es valido. ');
-}
+} */
+
+/* 3- Realiza un script que pida cadenas de texto  hasta que se pulse “cancelar”. Al salir con “cancelar” deben mostrarse todas las cadenas concatenadas con un guión -.
+
+Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp */
+
