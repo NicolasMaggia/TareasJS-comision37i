@@ -240,6 +240,7 @@ for(i = 1; i <= 500; i++){
     }
     if(i % 5 == 0){
         document.write('<br>');
+        document.write('<hr>');
     }
     document.write("<br>");
 }
