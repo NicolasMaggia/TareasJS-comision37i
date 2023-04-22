@@ -187,7 +187,7 @@ if(Number(numrep) == numrep){
 ……
  */
 
-let numrep = prompt('Ingresa el numero de escalones que tendra la piramide. El numero no debe ser mayor a 50.');
+/* let numrep = prompt('Ingresa el numero de escalones que tendra la piramide. El numero no debe ser mayor a 50.');
 //validar si el dato obtenido es un numero
 if(Number(numrep) == numrep){
     //validar el tope de la piramide
@@ -211,4 +211,35 @@ if(Number(numrep) == numrep){
 }else{
     alert("No es un valor numerico.");
 }
+ */
 
+/* 9- Crea un script que escriba los números del 1 al 500, que indique cuáles son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea horizontal. Por ejemplo :
+
+1
+2
+3
+4 (Múltiplo de 4)
+5-
+————————————————————-
+
+6
+7
+8 (Múltiplo de 4)
+9 (Múltiplo de 9)
+10 */
+
+let i, linea = 0;
+//Crear ciclo for para los 30 escalones
+for(i = 1; i <= 500; i++){
+    document.write(i)
+    if(i % 4 == 0){
+        document.write('es divisible por 4');
+    }
+    if(i % 9 == 0){
+        document.write('es divisible por 9');
+    }
+    if(i % 5 == 0){
+        document.write('<br>');
+    }
+    document.write("<br>");
+}
