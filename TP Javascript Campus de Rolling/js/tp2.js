@@ -48,3 +48,33 @@ if(nota <= 2 ){
 
 Nota: usar confirm() https://www.w3schools.com/jsref/met_win_confirm.asp */
 
+
+ /*    let text = prompt('Ingrese una oracion.');
+
+    while (true) {
+        let input = prompt('Ingrese otra oracion que desea a concatenar con las siguientes');
+
+        if(input == null) {
+            console.log('cancel');
+            break;
+        }else{
+            text = `${text}-${input}`;
+        }
+    }
+
+    document.write(` ${text.substring(0)}`); */
+
+ let text = prompt('Ingrese una oracion.');
+    
+    while (confirm) {
+        let input = prompt('Ingrese otra oracion que desea a concatenar con las siguientes');
+
+        if(input == null) {
+            console.log('cancel');
+            break;
+        }else{
+            text = `${text}-${input}`;
+        }
+    }
+
+    document.write(` ${text.substring(0)}`);

@@ -114,15 +114,15 @@ for(let i=0; i < frase.length; i++){
 let frase = prompt(`Escriba una frase.`);
 let texto = frase.length
 
-
 for(let i = O; i <= texto; i++){
     if(frase.charAt(i,0) === "a" || frase.charAt(i,0) === "e" || frase.charAt(i,0) === "à" || 
         frase.charAt(i,0) === "E" || frase.charAt(i,0) === "A" || frase.charAt(i,0) === "è" ||
         frase.charAt(i,0) === "i" || frase.charAt(i,0) === "I" || frase.charAt(i,0) === "ì" || 
         frase.charAt(i,0) === "o" || frase.charAt(i,0) === "O" || frase.charAt(i,0) === "ò" || 
-        frase.charAt(i,0) === "u" || frase.charAt(i,0) === "ù" || frase.charAt(i,0) === "U")
+        frase.charAt(i,0) === "u" || frase.charAt(i,0) === "ù" || frase.charAt(i,0) === "U" ){
         document.write(frase.charAt(i,0));
     }
+}
 
 
 
@@ -192,3 +192,5 @@ if(num % 7 == 0 && num > 0 ){
     document.write(`${num} es divisible por 7. <br>`);
 } 
  */
+
+
