@@ -228,7 +228,7 @@ if(Number(numrep) == numrep){
 9 (Múltiplo de 9)
 10 */
 
-let i, linea = 0;
+/* let i, linea = 0;
 //Crear ciclo for para los 30 escalones
 for(i = 1; i <= 500; i++){
     document.write(i)
@@ -243,4 +243,4 @@ for(i = 1; i <= 500; i++){
         document.write('<hr>');
     }
     document.write("<br>");
-}
+} */
